@@ -1,0 +1,7 @@
+<h1> <%= @restaurant.name %></h1>
+<p> <%= @restaurant.address %> </p>
+<p> <%= @restaurant.category.capitalize%> </p>
+<p> <%= @restaurant.phone_number %> </p>
+
+<%= link_to ("<i class='fa-solid fa-rotate-left'></i> Back to restaurants").html_safe, restaurants_path %>
+<%= link_to ("<i class='fa-solid fa-plus'></i> Add review").html_safe, new_restaurant_review_path(@restaurant) %>
